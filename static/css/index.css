@@ -624,11 +624,30 @@ body {
 }
 
 /* ── TL;DR callout ── */
-.content.is-size-5[style*="dashed"] {
+.content.is-size-5[style*="dashed"], .tldr-callout {
   border: none !important;
   background: linear-gradient(135deg, #f0f9fa, #f5fbfc) !important;
-  border-left: 3px solid #379cab !important;
-  border-radius: 0 8px 8px 0 !important;
+  border-left: 4px solid #379cab !important;
+  border-radius: 8px !important;
+  padding: 1rem 1.25rem !important;
+  max-width: 1040px !important;
+  margin: 1rem auto 1.35rem !important;
+  color: #1f2937 !important;
+  line-height: 1.6 !important;
+}
+
+.tldr-list {
+  padding-left: 1.3rem;
+  margin: 0.6rem 0 0 0;
+}
+
+.tldr-list li {
+  margin: 0.5rem 0;
+}
+
+.tldr-emphasis {
+  color: #0f5e99;
+  font-weight: 700;
 }
 
 /* ── Abstract text ── */
