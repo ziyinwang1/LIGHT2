@@ -36,9 +36,45 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.teaser video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.teaser .hero-body,
+.teaser .columns {
+  text-align: center;
+}
+
 
 .publication-title {
   font-family: 'Google Sans', sans-serif;
+}
+
+.section-title {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1.2rem;
+  padding-bottom: 0.6rem;
+  position: relative;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #3273dc;
+  border-radius: 2px;
 }
 
 .publication-banner {
@@ -73,6 +109,18 @@ body {
     color: #ff3860;
     width: fit-content;
     font-weight: bolder;
+}
+
+.iclr-badge {
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 0.35rem 0.7rem;
+  border: 2px solid #3273dc;
+  border-radius: 999px;
+  color: #1a2f55;
+  background: rgba(50, 115, 220, 0.08);
+  letter-spacing: 0.03em;
+  display: inline-block;
 }
 
 .publication-authors a {
@@ -197,6 +245,29 @@ body {
 }
 
 .publication-banner img {
+}
+
+.section-title {
+  display: block;
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #3273dc;
+  border-radius: 2px;
 }
 
 .publication-video {
@@ -970,8 +1041,10 @@ body {
 }
 
 .content p {
-  font-size: 1.04rem;
+  font-size: 1.18rem;
   color: var(--light-body);
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -1005,4 +1078,38 @@ body {
   font-size: 0.98rem !important;
   font-weight: 700 !important;
   letter-spacing: -0.004em;
+}
+
+/* Approach Overview typography */
+.approach-overview-title {
+  font-family: inherit !important;
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  color: #1f2937 !important;
+}
+
+.approach-overview-caption {
+  max-width: 1040px;
+  margin: 0.9rem auto 0;
+  padding: 0 0.5rem;
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+  font-size: 1.28rem;
+  line-height: 1.7;
+  color: #334155;
+  font-weight: 500;
+  letter-spacing: -0.004em;
+}
+
+.approach-overview-caption strong {
+  color: #1f2937;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .approach-overview-caption {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin-top: 0.7rem;
+  }
 }
